@@ -1,6 +1,6 @@
 {
   "name": "composable-list",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "author": "u_022bf",
   "main": "dist/index.js",
@@ -43,10 +43,6 @@
     "@types/react-redux": "^7.1.5",
     "autoprefixer": "^9.7.1",
     "husky": "^3.0.9",
-    "lodash.get": "^4.4.2",
-    "lodash.isempty": "^4.4.0",
-    "lodash.partition": "^4.6.0",
-    "lodash.sortby": "^4.7.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-redux": "^5.0.7",
@@ -57,5 +53,10 @@
     "tslib": "^1.10.0",
     "typescript": "^3.7.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "lodash.isempty": "^4.4.0",
+    "lodash.partition": "^4.6.0",
+    "lodash.sortby": "^4.7.0"
+  }
 }
