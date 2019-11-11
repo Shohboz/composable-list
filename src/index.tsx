@@ -1,6 +1,21 @@
-import * as React from 'react';
+import { combineReducers } from 'redux';
+import * as enhancements from './enhancements';
+import * as components from './components';
+import paginate, { gotoPage, PaginationState } from './modules/paginate';
+import sort, { SortState } from './modules/sort';
 
-// Delete me
-export const Thing = () => {
-  return <div>the snozzberries taste like snozzberries</div>;
+export type State = Readonly<{
+  paginate: PaginationState;
+  sort: SortState;
+}>;
+
+export default combineReducers({
+  paginate,
+  sort,
+});
+
+const actionCreators = {
+  paginate: gotoPage,
 };
+
+export { components, enhancements, actionCreators };
